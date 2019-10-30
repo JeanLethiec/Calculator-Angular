@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class CalculatorScreenComponent implements OnInit {
 
-  @Input() private operations: Array<String>;
+  @Input() operations: Array<String>;
 
   constructor() { }
 

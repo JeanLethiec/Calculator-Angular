@@ -2,7 +2,6 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { CalculatorKeypadComponent } from './calculator-keypad.component';
 import { By } from '@angular/platform-browser';
-import { ExpectedConditions } from 'protractor';
 
 describe('CalculatorInputComponent', () => {
   let component: CalculatorKeypadComponent;
