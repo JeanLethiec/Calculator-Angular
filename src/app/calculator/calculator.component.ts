@@ -19,7 +19,11 @@ export class CalculatorComponent implements OnInit {
 
   onKeyClicked(key) {
     if (key === "=") {
-      this.previousOperations = [evaluate(this.currentOperation.join('')).toString(), ...this.previousOperations];
+      try {
+        this.previousOperations = [`${this.currentOperation.join('')} = ${evaluate(this.currentOperation.join(''))}`, ...this.previousOperations];
+      } catch (err) {
+        this.previousOperations = [`${this.currentOperation.join('')} = ERROR`, ...this.previousOperations]
+      }
       this.currentOperation = [];
     } else {
       this.currentOperation = [...this.currentOperation, key];

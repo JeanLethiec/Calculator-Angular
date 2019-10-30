@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { CalculatorComponent } from './calculator/calculator.component';
 import { CalculatorScreenComponent } from './calculator-screen/calculator-screen.component';
 import { CalculatorKeypadComponent } from './calculator-keypad/calculator-keypad.component';
+import { OperationsHistoryComponent } from './operations-history/operations-history.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CalculatorComponent,
     CalculatorScreenComponent,
-    CalculatorKeypadComponent
+    CalculatorKeypadComponent,
+    OperationsHistoryComponent
   ],
   imports: [
     BrowserModule,
