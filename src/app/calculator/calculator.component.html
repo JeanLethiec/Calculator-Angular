@@ -1,0 +1,6 @@
+<div class="calculator">
+  <app-calculator-keypad
+    (onKeyClicked)="onKeyClicked($event)"
+  ></app-calculator-keypad>
+  <app-calculator-screen [operations]="operations"></app-calculator-screen>
+</div>

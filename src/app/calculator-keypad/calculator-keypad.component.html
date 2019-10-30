@@ -1,0 +1,11 @@
+<div class="calculator-keypad">
+  <div *ngFor="let keyRow of keys">
+    <div class="keypad-row">
+      <div *ngFor="let key of keyRow">
+        <div [ngClass]="getClassForKey(key)" (click)="handleKeyClick(key)">
+          {{ key }}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

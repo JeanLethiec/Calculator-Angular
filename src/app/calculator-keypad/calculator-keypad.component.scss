@@ -1,0 +1,38 @@
+.calculator-keypad {
+  margin-bottom: 10px;
+
+  .key {
+    background: #fff;
+    border: 1px solid #999;
+    float: left;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 60px;
+    height: 60px;
+    margin-right: 2px;
+    margin-top: 2px;
+    padding: 0;
+    text-align: center;
+    width: 60px;
+    border-radius: 8px;
+    cursor: pointer;
+
+    &.operator {
+      background: #d1e1e8;
+    }
+
+    &.total {
+      background: #b5e2f7;
+    }
+
+    &:hover {
+      background: rgb(228, 228, 228);
+    }
+  }
+
+  .keypad-row:after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+}
