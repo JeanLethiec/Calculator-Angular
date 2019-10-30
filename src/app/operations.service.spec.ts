@@ -9,4 +9,12 @@ describe('OperationsServiceService', () => {
     const service: OperationsService = TestBed.get(OperationsService);
     expect(service).toBeTruthy();
   });
+
+  it('should retrieve operations history', (done) => {
+    const service: OperationsService = TestBed.get(OperationsService);
+    service.getHistory().then(data => {
+      expect(data).toBeDefined();
+      done();
+    })
+  })
 });
