@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { OperationsHistoryComponent } from './operations-history.component';
+import { NO_ERRORS_SCHEMA } from '@angular/core';
 
 describe('OperationsHistoryComponent', () => {
   let component: OperationsHistoryComponent;
@@ -8,9 +9,10 @@ describe('OperationsHistoryComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ OperationsHistoryComponent ]
+      declarations: [OperationsHistoryComponent],
+      schemas: [NO_ERRORS_SCHEMA]
     })
-    .compileComponents();
+      .compileComponents();
   }));
 
   beforeEach(() => {
